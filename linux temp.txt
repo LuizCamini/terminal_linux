@@ -1,44 +1,9 @@
-comandos -
 apk instalar windows **
-
-- sudo apt-get install openssh-server
-
-- service ssh status
 
 **instalar PUTTY VERSAO DA MAQUINA CLIENT https://www.putty.org/
 
 no linux virtual localizar o ip
 
 no putty incluir o ip para acessar
-
-
-
-aula 7 backups
-
-download a partir da url
-
-- wget <url>
-
-- unzip <nome do arquivo.zip>
-
-comando para compactacao de aquivos
-- tar
-
-compactar e reduzir arquivo 
-- gzip <nome do arquivo>
-
-
-para descompactar.
-- gunzip < nome do arquivo para ser descompactado>
-
-
-visualizar conteudo do arquivo tar
-- tar -tvf <nome do arquivo>
-
-
-para ver tudo dentro do arquivo tar com nome item
-- tar -tvf <nome do arquivo> PIPE grep u.item
-
-
 
 
