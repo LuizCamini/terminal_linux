@@ -227,9 +227,17 @@ unzip <nome do arquivo.zip>
 - tar -tvf <nome do arquivo>
 ```
 
-#### ara ver tudo dentro do arquivo tar com nome item
+#### Ver tudo dentro do arquivo tar com nome item
 ```shell
 - tar -tvf <nome do arquivo> PIPE grep u.item
 ```
 
+#### comando para ver informações do tipo do arquivo 
+```shell
+file  <nome do arquivo>
+```
 
+#### comando para criar um despejo de hex ou binario de um determinado arquivo 
+```shell
+xxd <argumento> <nome do arquivo>
+```
