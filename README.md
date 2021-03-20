@@ -241,3 +241,13 @@ file  <nome do arquivo>
 ```shell
 xxd <argumento> <nome do arquivo>
 ```
+
+#### comando para identificar estado do (BASE) e desativar
+```shell
+conda config --show | grep auto_activate_base
+```
+
+- Desativar (BASE)
+```shell
+conda config --set auto_activate_base False
+```
