@@ -1,0 +1,77 @@
+Fonte: https://e-tinet.com/linux/comando-linux-apt-get/
+
+sudo apt-get update
+Consulta as entradas dos repositórios listados no arquivo /etc/apt/sources.list e atualiza a base de dados de pacotes disponíveis.
+
+Sempre execute este comando para manter a base de dados de pacotes atualizada.
+
+apt-cache search nome_de_um_pacote
+Pesquisa na base de dados dos repositórios APT, pela palavra chave. Este comando devolve o nome e a descrição do pacote encontrado.
+
+apt-get install nome_de_um_pacote
+Este comando Linux faz o download e instala um ou mais pacotes de um repositório APT.
+
+A partir da versão 0.6 do APT, este comando irá verificar automaticamente a autenticidade do pacote, através de chaves gpg .
+
+Vamos ver mais sobre como adicionar chaves gpg de repositórios APT.
+
+apt-get install -d nome_de_um_pacote
+Este comando Linux faz o download do pacote para o diretório /var/cache/apt/archives.
+
+A diferença para o comando apt-get install é que com a opção -d, será feito apenas o download do pacote sem qualquer instalação do mesmo.
+
+apt-cache show nome_de_um_pacote
+Exibir informações sobre o pacote
+
+apt-get upgrade
+Verifica atualizações de todos os pacotes de um sistema Linux, em seguida executa o download e instalação.
+
+apt-get dist-upgrade
+Atualiza todo o sistema para uma nova versão da distribuição, mesmo que isso signifique eliminar pacotes.
+
+apt-get autoclean
+Pode ser executado a qualquer momento para excluir pacotes parcialmente baixados
+
+apt-get clean
+Limpa todos os pacotes de /var/cache/apt/archives, muito bom para liberar espaço em disco.
+
+apt-get --purge remove < pacote >
+Remove todos os pacotes e seus arquivos de configuração. Para não remover os arquivos de configuração, apenas retire o parâmetro –purge
+
+apt-get -f install
+Verifica as dependências e tenta corrigir os problemas, no caso de uma instalação corrompida.
+
+apt-config -v
+Mostra a versão do apt e de seus utilitários.
+
+sudo apt-key list
+Lista as chaves gpg, dos repositórios APT.
+
+apt-cache stats
+Mostra as estatísticas de todos os pacotes.
+
+apt-cache depends
+Mostra as dependências de um pacote (se está ou não instalado).
+
+apt-cache search termo_de_pesquisa
+Pesquisa por um pacote nos repositórios on-line.
+
+Pronto, já temos nosso manual de referências do comando APT, na próxima parte vamos fazer alguns exercícios para fixar estes comandos.
+
+O apt-get install sem duvida será o mais utilizado no seu dia a dia para instalar novos pacotes. E não esqueça de executar o comando man apt-get
+
+Na distribuição Ubuntu, alguns comandos do Apt precisam ser executados com o sudo.
+
+Exemplo:
+
+sudo apt-get install vim
+Os comandos apt-get, apt-cache serão substituído, por somente apt?
+É certo que o Debian e Ubuntu agora tem o utilizado o utilitário apt.
+
+Veja:
+
+man apt
+depois veja
+
+man apt-get
+Podemos concluir que, o comando Apt é uma simplificação dos comandos apt-get, apt-cache.
