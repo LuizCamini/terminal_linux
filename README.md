@@ -1,5 +1,17 @@
 # Comandos essenciais para uso no Terminal Linux
 
+
+## 0 - Identificar versão:
+- Informações Completa
+```shell
+cat /etc/*-release
+```
+- ou
+```shell
+lsb_release -a
+```
+
+
 ## 1 -  Manipulação de Diretorios e Arquivos (mv, cp, rm, mkdir, rmdir) 
 
 ### 1.1 - Comando mv, Mover Arquivos ou Diretorios  
@@ -241,3 +253,20 @@ file  <nome do arquivo>
 ```shell
 xxd <argumento> <nome do arquivo>
 ```
+
+#### comando para identificar estado do (BASE) e desativar
+```shell
+conda config --show | grep auto_activate_base
+```
+
+- Desativar (BASE)
+```shell
+conda config --set auto_activate_base False
+```
+
+
+
+
+
+
+
