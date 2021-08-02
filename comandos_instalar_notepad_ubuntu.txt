@@ -1,0 +1,8 @@
+--Scripts para instalar notepad ++ linux:
+
+sudo apt-get update
+sudo apt list
+sudo apt list --installed | grep -i snapd
+sudo apt-get install snapd snapd-xdg-open
+sudo snap install notepad-plus-plus
+
