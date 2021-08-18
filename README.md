@@ -264,9 +264,37 @@ conda config --show | grep auto_activate_base
 conda config --set auto_activate_base False
 ```
 
+## 9 - RDP Client Linux FREERDP
+- Instalar:
+```shell
+sudo apt-get update
+sudo apt-get install freerdp2-x11
+sudo apt-get upgrade
+```
 
+- Help:
+```shell
+xfreerdp /?
+```
 
+- Exemplo usando Rede local:
+```shell
+ xfreerdp /w:1336 /h:900 /u:administrador /v:192.168.0.10 /p:senha
+```
 
+- Exemplo usando porta rede wan
+```shell
+ xfreerdp /w:1336 /h:900 /u:administrador /v:192.168.0.10 /p:senha /port:4005
+```
+
+- Principais parametros:
+/port: (porta) numero da porta de conexão, se não informar o padrão é 3389;
+/u: (usuario) usuario que sera usado para conexao;
+/p: (senha) senha do usuario;
+/v: (IP da Conexao) ip que sera conectado;
+/w: (pixels linha) Geometria da tela em linha (largura) exemplo: 1024 / 1280 / 1336 / 1920 ...
+/h: (pixel coluna) Geometria da tela em coluna (Altura) exemplo: 768 / 960 / 1024 / 1080 ...
++clipboard redirecionar a area de transferencia (CTRL + C e CTRL + V para arquivos).
 
 
 
