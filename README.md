@@ -296,5 +296,25 @@ xfreerdp /?
 /h: (pixel coluna) Geometria da tela em coluna (Altura) exemplo: 768 / 960 / 1024 / 1080 ...
 +clipboard redirecionar a area de transferencia (CTRL + C e CTRL + V para arquivos).
 
+## 10 - Comandos de gerenciamento de Processos:
 
+- Verifica o uso de processos do sistema e permite identificar o que esta mais consumindo recursos (os primeiros da Lista) para parar CTRL + C
+```shell
+top
+```
+
+- Comando ps lista os processos em execução no sistema, mas apenas resumido, sem detalhes.
+```shell
+ps
+```
+
+- Comando pstree permite visualizar os processos em forma de arvore melhorando a visualização e relações entre eles.
+```shell
+pstree
+```
+
+- Lista todos os processos com prioridades de execução com uma variação com escala entre 19 (menos significativa) a -20(mais significativa)
+```shell
+renice
+```
 
