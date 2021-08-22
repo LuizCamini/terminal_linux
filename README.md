@@ -318,3 +318,26 @@ pstree
 renice
 ```
 
+## 11 - Usando VPN IPSEC Linux Ubuntu/Debian
+
+- Instalar pacote VPNC
+```shell
+sudo apt-get install vpnc vpnc-scripts network-manager-vpnc network-manager-vpnc-gnome
+```
+#### Parte 1:
+- Acessar Network > VPN > clicar botão (+)
+- Selecionar (cisco compatible VPN)
+- Name = <nome sua(empresa) VPN>
+- Gateway = <IP fornecido por sua empresa>
+- User name = <nome usuario>
+- User Pasword = <senha usuario>
+- Group name = <Nome Grupo>
+- Group pasword = <Chave fornecida pela empresa Pré-shared Key>
+#### Parte 2:
+- Clicar na guia avançado;
+- Vendor = Cisco(Default)
+- Encryption method = Secure(default)
+- NAT transversal = NAT-T when avaliable(defalt)
+- IKE DH Group 5 (Forticlient)
+- Perfect Forward Secrecy = DH Group 5 (Forticlient)
+
